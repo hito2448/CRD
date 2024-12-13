@@ -1,7 +1,7 @@
 # CRD
 
 PyTorch Implementation of "Multimodal Industrial Anomaly Detection by Crossmodal Reverse Distillation".
-[paper](https://arxiv.org/abs/)
+[paper](https://arxiv.org/abs/2412.08949)
 
 ## 1. Environment
 Create a new conda environment firstly.
