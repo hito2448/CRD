@@ -262,8 +262,6 @@ def valid(teacher_rgb, teacher_depth, student_rgb, student_depth, valid_dataload
 
 if __name__ == "__main__":
 
-    setup_seed(111)
-
     classnames = ['bagel', 'cable_gland', 'carrot', 'cookie', 'dowel', 'foam', 'peach', 'potato', 'rope', 'tire']
 
     learning_rate = 0.005
