@@ -77,10 +77,5 @@ python train_Eyecandies.py
 ## Citation
 If you think this work is helpful to you, please consider citing our paper.
 ```
-@article{crd2024,
-  title={Multimodal Industrial Anomaly Detection by Crossmodal Reverse Distillation},
-  author={Xinyue Liu and Jianyuan Wang and Biao Leng and Shuo Zhang},
-  journal={arXiv preprint arXiv:2412.08949},
-  year={2024}
-}
+
 ```
