@@ -3,13 +3,9 @@
 PyTorch Implementation of "Multimodal Industrial Anomaly Detection by Crossmodal Reverse Distillation".
 [paper](https://arxiv.org/abs/2412.08949)
 
-**_Training Process_** (Take modality A’s branch as an example):
+**_Anomaly Detection Process_**:
 
-![image](https://github.com/hito2448/CRD/blob/main/docs/training.jpg)
-
-**_Inference Process_** (Take modality A’s branch as an example):
-
-![image](https://github.com/hito2448/CRD/blob/main/docs/inference.jpg)
+![image](https://github.com/hito2448/CRD/blob/main/figs/overview.png)
 
 
 ## 1. Environment
