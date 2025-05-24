@@ -5,7 +5,7 @@ PyTorch Implementation of "Multimodal Industrial Anomaly Detection by Crossmodal
 
 **_Anomaly Detection Process_**:
 
-![image](https://github.com/hito2448/CRD/blob/main/figs/overview.png)
+![image](https://github.com/hito2448/CRD/blob/main/overview.png)
 
 
 ## 1. Environment
