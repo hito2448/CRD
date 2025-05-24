@@ -486,17 +486,15 @@ class ResNet_Skip(nn.Module):
         feature_a_0 = self.layer1(x)
         w1 = torch.exp(self.w_a[0]) / torch.sum(torch.exp(self.w_a))
         w2 = torch.exp(self.w_a[1]) / torch.sum(torch.exp(self.w_a))
-        feature_a_1 = w1.detach() * feature_a_0 + w2.detach() * x_assit[2]
-        feature_a = w1 * feature_a_0.detach() + w2 * x_assit[2].detach()
-        feature_b_0 = self.layer2(feature_a_1)
+        feature_a = w1 * feature_a_0 + w2 * x_assit[2]
+        feature_b_0 = self.layer2(feature_a)
         w1 = torch.exp(self.w_b[0]) / torch.sum(torch.exp(self.w_b))
         w2 = torch.exp(self.w_b[1]) / torch.sum(torch.exp(self.w_b))
-        feature_b_1 = w1.detach() * feature_b_0 + w2.detach() * x_assit[1]
-        feature_b = w1 * feature_b_0.detach() + w2 * x_assit[1].detach()
-        feature_c_0 = self.layer3(feature_b_1)
+        feature_b = w1 * feature_b_0 + w2 * x_assit[1]
+        feature_c_0 = self.layer3(feature_b)
         w1 = torch.exp(self.w_c[0]) / torch.sum(torch.exp(self.w_c))
         w2 = torch.exp(self.w_c[1]) / torch.sum(torch.exp(self.w_c))
-        feature_c = w1 * feature_c_0.detach() + w2 * x_assit[0].detach()
+        feature_c = w1 * feature_c_0 + w2 * x_assit[0]
 
 
         # Try attention -> False
